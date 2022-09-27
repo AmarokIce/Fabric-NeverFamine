@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "never_famine:cup"
+    }
+  ],
+  "result": {
+    "item": "never_famine:berries_juice",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:leather"
+  },
+  "result": "never_famine:cooked_leather",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:snowball"
+    },
+    {
+      "item": "never_famine:cup"
+    }
+  ],
+  "result": {
+    "item": "never_famine:ice_cream",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:sugar_cane"
+  },
+  "result": "never_famine:cooked_canes",
+  "experience": 0.5,
+  "cookingtime" : 100
+}
