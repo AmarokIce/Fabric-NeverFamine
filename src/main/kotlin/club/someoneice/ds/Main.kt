@@ -20,7 +20,7 @@ val DSG = FabricItemGroupBuilder.build(
 ) { ItemStack(Items.CAKE) }
 
 fun onInitialize() {
-    LOGGER.info("Welcome to player Never Famin! Now Loader Never Famin main ......")
+    LOGGER.info("Welcome to play Never Famin! Now Loader Never Famin main ......")
     ItemInit.init()
     BlockInit.init()
 }
