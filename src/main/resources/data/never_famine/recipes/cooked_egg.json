@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:egg"
+  },
+  "result": "never_famine:cooked_egg",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

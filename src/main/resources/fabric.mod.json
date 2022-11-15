@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "never_famine",
+  "version": "${version}",
+
+  "name": "Never Famine",
+  "description": "Now your world will Never Famine!",
+  "authors": [
+    "Someoneice"
+  ],
+  "contact": {
+  },
+
+  "license": "Pineapple",
+  "icon": "assets/never_famine/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "club.someoneice.never_famine.FamineMainKt::init"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.19.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

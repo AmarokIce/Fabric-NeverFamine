@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:red_mushroom"
+  },
+  "result": "never_famine:cooked_mushroom",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

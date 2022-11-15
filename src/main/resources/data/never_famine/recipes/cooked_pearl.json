@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:ender_pearl"
+  },
+  "result": "never_famine:cooked_pearl",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

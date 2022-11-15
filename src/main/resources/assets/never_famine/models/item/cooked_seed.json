@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "never_famine:item/cooked_seed"
+  }
+}

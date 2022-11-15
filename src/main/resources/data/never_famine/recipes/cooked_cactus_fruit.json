@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "never_famine:cactus_fruit"
+  },
+  "result": "never_famine:cooked_cactus_fruit",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

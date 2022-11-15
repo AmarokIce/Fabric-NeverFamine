@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient" : {
+    "item" : "minecraft:vine"
+  },
+  "result": "never_famine:cooked_vine",
+  "experience": 0.5,
+  "cookingtime" : 100
+}

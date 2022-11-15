@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "never_famine:cheese"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:leaves"
+    },
+    {
+      "item": "never_famine:cheese"
+    }
+  ],
+  "result": {
+    "item": "never_famine:leaves_salad",
+    "count": 1
+  }
+}
