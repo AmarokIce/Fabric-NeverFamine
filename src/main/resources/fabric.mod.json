@@ -17,7 +17,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "club.someoneice.never_famine.FamineMainKt::init"
+      "club.someoneice.never_famine.FamineMainKt::onInitialize"
     ]
   },
   "mixins": [],
