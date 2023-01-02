@@ -22,10 +22,10 @@ fun onInitialize() {
     BlockInit.init()
 
     FabricItemGroup.builder(Identifier(modid, "never_famine"))
-        .icon { ItemStack(Items.CAKE) }.entries{ _: FeatureSet?, entries: ItemGroup.Entries?, _: Boolean ->
+        .icon { ItemStack(Items.CAKE) }.entries{ features: FeatureSet, entries: ItemGroup.Entries, _: Boolean ->
             run {
                 for (i: Item in ItemInit.itemList) {
-                    entries?.add(i)
+                    entries.add(i)
                 }
             }
         }.build()
