@@ -2,14 +2,16 @@ package club.someoneice.never_famine.init
 
 import club.someoneice.never_famine.common.item.BukkitFood
 import club.someoneice.never_famine.common.item.KnifeItem
-import club.someoneice.never_famine.util.ItemList
 import club.someoneice.never_famine.modid
+import club.someoneice.never_famine.util.ItemList
 import net.minecraft.item.Item
+import net.minecraft.registry.Registries
+import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
-import net.minecraft.util.registry.Registry
-
 
 object ItemInit {
+    val itemList = ArrayList<Item>()
+
     val Knife: Item = KnifeItem()
     val Leaves: Item = ItemList.ItemItems()
     val Cup: Item = ItemList.ItemItems()
@@ -50,45 +52,43 @@ object ItemInit {
     val Nectar: Item = BukkitFood(false)
 
     fun init() {
-        Registry.register(Registry.ITEM, Identifier(modid, "knife"), Knife)
+        registerItem("knife", Knife)
+        registerItem("leaves", Leaves)
+        registerItem("cup", Cup)
+        registerItem("cooked_canes", CookedCanes)
+        registerItem("cooked_leather", CookedLeather)
+        registerItem("cooked_egg", CookedEgg)
+        registerItem("marshmallows", Marshmallows)
+        registerItem("cooked_carrot", CookedCarrot)
+        registerItem("pumpkin_side", PumpkinSide)
+        registerItem("chocolate", Chocolate)
+        registerItem("cooked_mushroom", CookedMushroom)
+        registerItem("cooked_vine", CookedVine)
+        registerItem("lotus", Lotus)
+        registerItem("cooked_lotus", CookedLotus)
+        registerItem("cactus_fruit", CactusFruit)
+        registerItem("cooked_cactus_fruit", CoookedCactusFruit)
+        registerItem("ice_cream", IceCream)
+        registerItem("berries_juice", BerriesJuice)
+        registerItem("glow_berries_juice", GlowBerriesJuice)
+        registerItem("cooked_flesh", CookedFlesh)
+        registerItem("cooked_eye", CookedEye)
+        registerItem("cooked_bone", CookedBone)
+        registerItem("cooked_pearl", CookedPearl)
+        registerItem("slime_fudge", SlimeFudge)
+        registerItem("cooked_seed", CookedSeed)
+        registerItem("grass_salad", GrassSalad)
+        registerItem("leaves_salad", LeavesSalad)
+        registerItem("mushroom_salad", MushroomSalad)
+        registerItem("seed_salad", SeedSalad)
+        registerItem("tramp_salad", TrampSalad)
+        registerItem("hot_milk", HotMilk)
+        registerItem("cheese", Cheese)
+        registerItem("nectar", Nectar)
+    }
 
-        Registry.register(Registry.ITEM, Identifier(modid, "leaves"), Leaves)
-        Registry.register(Registry.ITEM, Identifier(modid, "cup"), Cup)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_canes"), CookedCanes)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_leather"), CookedLeather)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_egg"), CookedEgg)
-        Registry.register(Registry.ITEM, Identifier(modid, "marshmallows"), Marshmallows)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_carrot"), CookedCarrot)
-        Registry.register(Registry.ITEM, Identifier(modid, "pumpkin_side"), PumpkinSide)
-        Registry.register(Registry.ITEM, Identifier(modid, "chocolate"), Chocolate)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_mushroom"), CookedMushroom)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_vine"), CookedVine)
-        Registry.register(Registry.ITEM, Identifier(modid, "lotus"), Lotus)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_lotus"), CookedLotus)
-        Registry.register(Registry.ITEM, Identifier(modid, "cactus_fruit"), CactusFruit)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_cactus_fruit"), CoookedCactusFruit)
-        Registry.register(Registry.ITEM, Identifier(modid, "ice_cream"), IceCream)
-        Registry.register(Registry.ITEM, Identifier(modid, "berries_juice"), BerriesJuice)
-        Registry.register(Registry.ITEM, Identifier(modid, "glow_berries_juice"), GlowBerriesJuice)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_flesh"), CookedFlesh)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_eye"), CookedEye)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_bone"), CookedBone)
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_pearl"), CookedPearl)
-        Registry.register(Registry.ITEM, Identifier(modid, "slime_fudge"), SlimeFudge)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "cooked_seed"), CookedSeed)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "grass_salad"), GrassSalad)
-        Registry.register(Registry.ITEM, Identifier(modid, "leaves_salad"), LeavesSalad)
-        Registry.register(Registry.ITEM, Identifier(modid, "mushroom_salad"), MushroomSalad)
-        Registry.register(Registry.ITEM, Identifier(modid, "seed_salad"), SeedSalad)
-        Registry.register(Registry.ITEM, Identifier(modid, "tramp_salad"), TrampSalad)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "hot_milk"), HotMilk)
-        Registry.register(Registry.ITEM, Identifier(modid, "cheese"), Cheese)
-
-        Registry.register(Registry.ITEM, Identifier(modid, "nectar"), Nectar)
+    private fun registerItem(name: String, item: Item) {
+        itemList.add(item)
+        Registry.register(Registries.ITEM, Identifier(modid, name), item)
     }
 }

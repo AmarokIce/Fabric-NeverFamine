@@ -1,6 +1,5 @@
 package club.someoneice.never_famine.common.item
 
-import club.someoneice.never_famine.DSG
 import net.minecraft.advancement.criterion.Criteria
 import net.minecraft.entity.LivingEntity
 import net.minecraft.entity.effect.StatusEffectInstance
@@ -18,7 +17,7 @@ import net.minecraft.util.UseAction
 import net.minecraft.world.World
 
 
-class BukkitFood(private val isBukkitFood: Boolean): Item(Settings().group(DSG)) {
+class BukkitFood(private val isBukkitFood: Boolean): Item(Settings()) {
     override fun finishUsing(itemStack: ItemStack, world: World, player: LivingEntity): ItemStack {
         if (player is ServerPlayerEntity) {
             Criteria.CONSUME_ITEM.trigger(player, itemStack)

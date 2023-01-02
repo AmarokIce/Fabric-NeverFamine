@@ -1,13 +1,12 @@
 package club.someoneice.never_famine.common.item
 
 import club.someoneice.never_famine.init.ItemInit
-import club.someoneice.never_famine.DSG
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
+import net.minecraft.registry.tag.BlockTags
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvents
-import net.minecraft.tag.BlockTags
 import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.util.hit.BlockHitResult
@@ -18,7 +17,7 @@ import net.minecraft.world.event.GameEvent
 import java.util.*
 
 
-class KnifeItem: Item(Settings().group(DSG).maxCount(1)) {
+class KnifeItem: Item(Settings().maxCount(1)) {
 
     override fun use(world: World, player: PlayerEntity, hand: Hand?): TypedActionResult<ItemStack>? {
         val itemStack = player.getStackInHand(hand)

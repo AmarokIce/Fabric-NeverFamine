@@ -1,13 +1,13 @@
 package club.someoneice.never_famine.util
 
-import club.someoneice.never_famine.DSG
 import net.minecraft.item.FoodComponent
 import net.minecraft.item.Item
 import net.minecraft.item.Item.Settings
 
+
 object ItemList {
     fun ItemItems(): Item {
-        return Item(Settings().group(DSG))
+        return Item(Settings())
     }
 
     fun ItemFoods(hunger: Int, wolfFood: Boolean, fastEat: Boolean, alwaysEat: Boolean): Item {
@@ -20,7 +20,6 @@ object ItemList {
         if (wolfFood) builder.meat()
         if (fastEat) builder.snack()
         if (alwaysEat) builder.alwaysEdible()
-        settings.group(DSG)
 
         settings.food(builder.build())
         return Item(settings)
@@ -36,7 +35,6 @@ object ItemList {
         if (wolfFood) builder.meat()
         if (fastEat) builder.snack()
         if (alwaysEat) builder.alwaysEdible()
-        settings.group(DSG)
 
         settings.food(builder.build())
         return BowlFood(settings)
@@ -52,7 +50,6 @@ object ItemList {
         if (wolfFood) builder.meat()
         if (fastEat) builder.snack()
         if (alwaysEat) builder.alwaysEdible()
-        settings.group(DSG)
 
         settings.food(builder.build())
         return CupFood(settings)

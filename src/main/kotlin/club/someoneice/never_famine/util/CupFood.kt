@@ -14,7 +14,7 @@ class CupFood(settings: Settings?) : Item(settings) {
         return 32
     }
 
-    override fun getUseAction(stack: ItemStack?): UseAction? {
+    override fun getUseAction(stack: ItemStack?): UseAction {
         return UseAction.DRINK
     }
 
